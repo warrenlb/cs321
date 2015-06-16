@@ -3,6 +3,11 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
+/**
+ * Driver program to generate a BTree from a parsed file.
+ * @author csilkwor
+ *
+ */
 
 public class GeneBankCreateBTree {
 
@@ -16,7 +21,6 @@ public class GeneBankCreateBTree {
 		String word;
 		String start = "ORIGIN";
 		String end = "//";
-		String p = "";
 		
 		while(filescan.hasNext()){
 			input = filescan.next();
@@ -31,17 +35,6 @@ public class GeneBankCreateBTree {
 			
 		}
 		System.out.println(parsed);
-		Scanner scan = new Scanner(parsed);
-		while(!scan.nextLine().equals("ORIGIN")){
-			
-			while(scan.hasNext()){
-				p+=scan.next();
-			}
-		}
-		
-		
-		System.out.println(p);
-		
 
 	}
 
